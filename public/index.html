@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>bpukanda - Personal Website</title>
+</head>
+
+<body class="bg-body text-white">
+    <!-- Header -->
+    <header>
+        <nav class="container flex items-center py-4 mt-4 sm:mt-12">
+            <div class="py-1 text-lg font-raleway uppercase">Bryan / Pukanda</div>
+            <ul class="hidden sm:flex flex-1 justify-end items-center gap-12 uppercase text-md font-poppins">
+                <li class="cursor-pointer"><a href="#home" class="selected-text">Home</a></li>
+                <li class="cursor-pointer"><a href="#work">My Work</a></li>
+                <li class="cursor-pointer"><a href="#experience">Experience</a></li>
+                <button type="button" class="bg-cyan-500 rounded-md px-7 py-3 uppercase font-bold"><a
+                        href="#contact">Contact me</a></button>
+            </ul>
+            <div class="flex sm:hidden flex-1 justify-end"><i class="text-2xl fas fa-bars"></i></div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="container mt-16 flex justify-between items-center mx-auto">
+        <div class="flex flex-wrap md:flex-nowrap">
+            <!-- Dot Navigation -->
+            <nav class="inline-block lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block">
+                <div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-36">
+                    <a href="#home"
+                        class="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Home</span>
+                    </a>
+
+                    <a href="#work" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">My Work</span>
+                    </a>
+
+                    <a href="#experience" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Experience</span>
+                    </a>
+
+                    <a href="#contact" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Contact me</span>
+                    </a>
+                </div>
+            </nav>
+
+            <!-- Headline -->
+            <div class="flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my-36">
+                <h1 class="font-bold text-5xl md:text-6xl lg:text-7xl text-center md:text-left">Welcome <br> to my <br>
+                    Website.</h1>
+                <!-- Button -->
+                <div class="w-full flex justify-center md:justify-start">
+                    <button type="button"
+                        class="bg-cyan-500 rounded-md px-8 py-4 font-bold mt-12 dlex items-center space-x-3">
+                        <a href="#work"><i class="fa-regular fa-eye"></i>
+                            <span>My Work</span></a>
+                    </button>
+                </div>
+            </div>
+            <!-- Image -->
+            <div>
+                <img class="w-3/4 mt-20 mx-auto md:absolute lg:w-1/2 -mt-6 md:mt-0 right-0 -z-10" src="img/code.png"
+                    alt="code">
+            </div>
+        </div>
+    </section>
+
+    <!-- My Work -->
+    <div class="container mt-24 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+        <section class="w-full">
+            <h2 id="work" class="secondary-title">My work</h2>
+            <p class="section-paragraph">I have been working on various work environment from China to Indonesia. My
+                skills covers a wide range of industries from general retail goods, mobile phones and steel industries.
+                Experienced web development, purchasing, and E-commerce development.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80"
+                    class="w-full bg-nav h-36 lg:h-72 object-cover">
+                <img src="https://images.unsplash.com/photo-1434626881859-194d67b2b86f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80"
+                    class="w-full bg-nav h-36 lg:h-72 object-cover">
+                <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
+                    class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
+                <!-- <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80"
+                    class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
+                <img src="https://images.unsplash.com/photo-1547119957-637f8679db1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                    class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
+                <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1336&q=80"
+                    class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
+                <img src="https://images.unsplash.com/photo-1603969072881-b0fc7f3d77d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80s"
+                    class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
+                <img src="https://images.unsplash.com/photo-1618761714954-0b8cd0026356?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                    class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
+                <img src="https://images.unsplash.com/photo-1545235617-7a424c1a60cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80"
+                    class="w-full hidden md:block md:col-span-2 lg:col-span-1 bg-nav h-36 lg:h-72 object-cover"> -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Experiences -->
+    <div class="container mt-24 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+        <section class="w-full">
+            <h2 id="experience" class="secondary-title">Experience</h2>
+            <p class="section-paragraph">I’ve had the pleasure of working with multi-cultural companies, develop
+                business
+                and implementing front-end website.</p>
+
+            <!-- Company -->
+            <div class="space-y-12 my-16">
+                <div
+                    class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+
+                    <!-- Company logo -->
+                    <div class="mb-6 lg:mb-0">
+                        <img src="img/oppo.png" alt="oppo">
+                    </div>
+
+                    <!-- Company info -->
+                    <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                        <h3 class="text-white text-3xl font-semibold">OPPO, ltd.</h3>
+
+                        <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+                            <div class="badge">E-Commerce</div>
+                            <div class="badge">Digital Marketing</div>
+                        </div>
+
+                        <p class="text-secondary">Working as a supervisor and handles wide variety of responsiblities
+                            which involves e-commerce and digital marketing development.</p>
+                    </div>
+
+                </div>
+                <div
+                    class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+
+                    <!-- Company logo -->
+                    <div class="mb-6 lg:mb-0">
+                        <img src="img/ceyou.png" alt="">
+                    </div>
+
+                    <!-- Company info -->
+                    <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                        <h3 class="text-white text-3xl font-semibold">Ceyou, ltd.</h3>
+
+                        <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+                            <div class="badge">Int. Trading</div>
+                            <div class="badge">E-Commerce</div>
+                        </div>
+
+                        <p class="text-secondary">I’ve had the pleasure of working in the trading industries and learned
+                            the strategy and international market development.</p>
+                    </div>
+
+                </div>
+                <div
+                    class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+
+                    <!-- Company logo -->
+                    <div class="mb-6 lg:mb-0">
+                        <img src="img/lionball.png" alt="lionball">
+                    </div>
+
+                    <!-- Company info -->
+                    <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                        <h3 class="text-white text-3xl font-semibold">Lionball, ltd.</h3>
+
+                        <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+                            <div class="badge">UI/UX</div>
+                            <div class="badge">Frontend development</div>
+                        </div>
+
+                        <p class="text-secondary">Work closely with Vice President of Ningbo Lionball to develop
+                            business with international client. Manage and supervise ventilator production within tight
+                            deadlines.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <!-- Contact me -->
+    <div class="container mt-24 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+        <section class="w-full">
+            <h2 id="contact" class="secondary-title">Contact me</h2>
+            <p class="section-paragraph">Feel free to to contact me any time, through any method below.</p>
+
+            <form method="post" action="mailto:bpukanda@gmail.com">
+                <div class="w-full grid gap-8 lg:gap-32 mt-10">
+                    <div class="space-y-12">
+                        <div>
+                            <label class="text-white block mb-6 text-xl font-bold">Name</label>
+                            <input class="w-full border border-input-border bg-input px-4 py-4 rounded-md">
+                        </div>
+                        <div>
+                            <label class="text-white block mb-6 text-xl font-bold">Email</label>
+                            <input type="email" class="w-full border border-input-border bg-input px-4 py-4 rounded-md">
+                        </div>
+                        <div>
+                            <label class="text-white block mb-6 text-xl font-bold">Message</label>
+                            <textarea type="email"
+                                class="w-full border border-input-border bg-input px-4 py-4 h-56 resize-none rounded-md"></textarea>
+                        </div>
+                        <button type="submit" class="px-6 py-2 bg-cyan-500 rounded-md text-white font-bold">Send
+                            it!</button>
+                    </div>
+            </form>
+        </section>
+    </div>
+
+    <div class="mt-12">
+        <!-- Contact info -->
+        <section class="py-8">
+            <div class="container flex flex-col md:flex-row items-center">
+                <div class="flex flex-1 flex-wrap items-center justify-center md:justify-start gap-12">
+                    <img src="./img/logo-bookmark-white.png" alt="">
+                    <ul class="flex text-white uppercase font-poppins gap-12 text-xs">
+                        <li class="cursor-pointer"><a href="mailto:bpukanda@gmail.com"
+                                class="no-underline block">email@bpukanda.com</a></li>
+                        <li class="cursor-pointer">Copyright© Bryan Pukanda 2022</li>
+                    </ul>
+                </div>
+                <div class="flex gap-10 mt-12 md:mt-0">
+                    <li class="list-none"><i class="text-white text-2xl fa-brands fa-twitter"></i></li>
+                    <li class="list-none"><i class="text-white text-2xl fa-brands fa-facebook-square"></i></li>
+                    <li class="list-none"><i class="text-white text-2xl fab fa-linkedin-in"></i></li>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
