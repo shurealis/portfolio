@@ -28,9 +28,11 @@
             <!-- Mobile menu button -->
             <div class="flex sm:hidden flex-1 justify-end right-0" id="menu-button">
                 <button class="outline-none mobile-menu-button">
-                    <div class=" w-6 h-6 text-white hover:text-cyan-500">
-                        <i class="fa-solid fa-burger fa-xl"></i>
-                    </div>
+                    <svg class=" w-5 h-5 text-gray-500 hover:text-cyan-500 " x-show="!showMenu" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
                 </button>
             </div>
         </nav>
@@ -66,15 +68,15 @@
                     </a>
 
                     <a href="#work" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
-                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Work</span>
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">My Work</span>
                     </a>
 
                     <a href="#experience" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
-                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Exp.</span>
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Experience</span>
                     </a>
 
                     <a href="#contact" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
-                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Contact</span>
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Contact me</span>
                     </a>
                 </div>
             </nav>
@@ -94,7 +96,7 @@
             </div>
             <!-- Image -->
             <div>
-                <img class="w-3/4 mt-14 mx-auto md:absolute lg:w-1/2 md:mt-0 right-0 -z-10" src="img/code.png"
+                <img class="w-3/4 mt-20 mx-auto md:absolute lg:w-1/2 md:mt-0 right-0 -z-10" src="img/code.png"
                     alt="blog">
             </div>
         </div>
