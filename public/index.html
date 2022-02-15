@@ -21,11 +21,39 @@
                 <li class="cursor-pointer"><a href="#home" class="selected-text">Home</a></li>
                 <li class="cursor-pointer"><a href="#work">My Work</a></li>
                 <li class="cursor-pointer"><a href="#experience">Experience</a></li>
-                <button type="button" class="bg-cyan-500 rounded-md px-7 py-3 uppercase font-bold"><a
+                <button type="button" class="bg-cyan-500 rounded-md px-7 py-2 uppercase font-bold"><a
                         href="#contact">Contact me</a></button>
             </ul>
-            <div class="flex sm:hidden flex-1 justify-end"><i class="text-2xl fas fa-bars"></i></div>
+
+            <!-- Mobile menu button -->
+            <div class="flex sm:hidden flex-1 justify-end right-0" id="menu-button">
+                <button class="outline-none mobile-menu-button">
+                    <svg class=" w-6 h-6 text-gray-500 hover:text-cyan-500 " x-show="!showMenu" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
         </nav>
+
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden w-full md:flex md:items-center md:w-auto text-center" id="menu">
+            <ul class=" text-base text-white pt-4 md:flex md:justify-between md:pt-0 pr-5">
+                <li>
+                    <a class="md:p-4 py-2 block hover:text-purple-400" href="#home">Home</a>
+                </li>
+                <li>
+                    <a class="md:p-4 py-2 block hover:text-purple-400" href="#work">My Work</a>
+                </li>
+                <li>
+                    <a class="md:p-4 py-2 block hover:text-purple-400" href="#experience">Experience</a>
+                </li>
+                <li>
+                    <a class="md:p-4 py-2 block hover:text-purple-400" href="#contact">Contact me</a>
+                </li>
+            </ul>
+        </div>
     </header>
 
     <!-- Hero -->
@@ -68,8 +96,8 @@
             </div>
             <!-- Image -->
             <div>
-                <img class="w-3/4 mt-20 mx-auto md:absolute lg:w-1/2 -mt-6 md:mt-0 right-0 -z-10" src="img/code.png"
-                    alt="code">
+                <img class="w-3/4 mt-20 mx-auto md:absolute lg:w-1/2 md:mt-0 right-0 -z-10" src="img/code.png"
+                    alt="blog">
             </div>
         </div>
     </section>
@@ -116,7 +144,7 @@
             <!-- Company -->
             <div class="space-y-12 my-16">
                 <div
-                    class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+                    class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap rounded-md">
 
                     <!-- Company logo -->
                     <div class="mb-6 lg:mb-0">
@@ -138,7 +166,7 @@
 
                 </div>
                 <div
-                    class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+                    class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap rounded-md">
 
                     <!-- Company logo -->
                     <div class="mb-6 lg:mb-0">
@@ -160,7 +188,7 @@
 
                 </div>
                 <div
-                    class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+                    class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap rounded-md">
 
                     <!-- Company logo -->
                     <div class="mb-6 lg:mb-0">
